@@ -31,6 +31,18 @@ XF86AudioLowerVolume
 	amixer sset Master 5%-
 XF86AudioRaiseVolume
 	amixer sset Master 5%+
+#
+#Light keys
+#
+XF86MonBrightnessUp
+	xbacklight -inc 10
+XF86MonBrightnessDown
+	xbacklight -dec 10
+alt + XF86MonBrightnessUp
+	xbacklight -set 40
+alt + XF86MonBrightnessDown
+	xbacklight -set 0.5
+
 
 #
 # bspwm hotkeys
