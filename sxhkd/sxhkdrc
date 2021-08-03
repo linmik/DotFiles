@@ -28,9 +28,12 @@ super + Escape
 #Audio Keys
 #
 XF86AudioLowerVolume
-	amixer sset Master 5%-
+	amixer sset Master 5%- unmuted
 XF86AudioRaiseVolume
-	amixer sset Master 5%+
+	amixer sset Master 5%+ unmuted
+XF86AudioMute
+	amixer set Master toggle
+
 #
 #Light keys
 #
